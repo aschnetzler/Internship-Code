@@ -1,0 +1,56 @@
+Error Broadcast:
+
+ini_set("display_errors", 1);
+ini_set("track_errors", 1);
+ini_set("html_errors", 1);
+error_reporting(E_ALL);
+
+
+Bootstrap alignment classes:
+
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+More information on typography: https://v4-alpha.getbootstrap.com/utilities/typography/
+
+
+.center-text
+CSS Gradients:
+
+background: -webkit-radial-gradient(red 5%, green 15%, blue 60%); /* Safari 5.1-6.0 */
+background: -o-radial-gradient(red 5%, green 15%, blue 60%); /* Opera 11.6-12.0 */
+background: -moz-radial-gradient(red 5%, green 15%, blue 60%); /* Firefox 3.6-15 */
+background: radial-gradient(red 5%, green 15%, blue 60%); /* Standard syntax */
+
+
+Divs to show screen size:
+
+<div class="hidden-md hidden-sm hidden-xs event-danger"><span>large</span></div>
+<div class="hidden-lg hidden-sm hidden-xs event-danger"><span>medium</span></div>
+<div class="hidden-lg hidden-md hidden-xs event-danger"><span>small</span></div>
+<div class="hidden-lg hidden-md hidden-sm event-danger"><span>extra small</span></div>
+
+
+Text-shadow as text stroke:
+
+text-shadow:
+-1px -1px 0 white,
+1px -1px 0 white,
+-1px 1px 0 white,
+1px 1px 0 white; 
+
+More on text shadows: http://valot.com/2012/01/fun-with-css-text-shadow/
+
+
+Insert class into Wordpress function
+
+<?php the_post_thumbnail('large', array(
+'class' => 'img-responsive'
+
+)); ?>
